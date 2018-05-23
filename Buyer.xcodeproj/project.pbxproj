@@ -40,6 +40,8 @@
 		01C855AA20B53015004AAE2D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C855A920B53015004AAE2D /* SystemConfiguration.framework */; };
 		01C855AC20B5301C004AAE2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C855AB20B5301C004AAE2D /* UIKit.framework */; };
 		01C855AE20B5349A004AAE2D /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 01C855AD20B53499004AAE2D /* GoogleMaps.bundle */; };
+		74466EF820B5E29200272F0D /* PayFortSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 74466EF620B5E29200272F0D /* PayFortSDK.bundle */; };
+		74466EF920B5E29200272F0D /* PayFortSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74466EF720B5E29200272F0D /* PayFortSDK.framework */; };
 		8835B2FB20B590E700961324 /* Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 8835B2FA20B590E700961324 /* Menu.png */; };
 		8835B2FD20B5A89300961324 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8835B2FC20B5A89300961324 /* arrow.png */; };
 		8835B30020B5A98A00961324 /* selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8835B2FE20B5A98A00961324 /* selected.png */; };
@@ -82,6 +84,9 @@
 		01C855A920B53015004AAE2D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		01C855AB20B5301C004AAE2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		01C855AD20B53499004AAE2D /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		74466EF620B5E29200272F0D /* PayFortSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PayFortSDK.bundle; sourceTree = "<group>"; };
+		74466EF720B5E29200272F0D /* PayFortSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PayFortSDK.framework; sourceTree = "<group>"; };
+		74466EFA20B5E2C600272F0D /* Buyer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Buyer-Bridging-Header.h"; sourceTree = "<group>"; };
 		8835B2FA20B590E700961324 /* Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu.png; sourceTree = "<group>"; };
 		8835B2FC20B5A89300961324 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		8835B2FE20B5A98A00961324 /* selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selected.png; sourceTree = "<group>"; };
@@ -110,6 +115,7 @@
 				01C8559020B52FA3004AAE2D /* Accelerate.framework in Frameworks */,
 				01C8558B20B52F1C004AAE2D /* GoogleMapsBase.framework in Frameworks */,
 				01C8558A20B52F1C004AAE2D /* GoogleMaps.framework in Frameworks */,
+				74466EF920B5E29200272F0D /* PayFortSDK.framework in Frameworks */,
 				01C8558920B52F1C004AAE2D /* GoogleMapsCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +154,7 @@
 				01C8558320B520FE004AAE2D /* SecondViewController.swift */,
 				01C8558520B52EEA004AAE2D /* GoogleMAPSDK */,
 				01C8556920B5168F004AAE2D /* Info.plist */,
+				74466EFA20B5E2C600272F0D /* Buyer-Bridging-Header.h */,
 				8835B2F920B590DC00961324 /* Images */,
 			);
 			path = Buyer;
@@ -167,6 +174,8 @@
 		01C8558E20B52FA2004AAE2D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				74466EF620B5E29200272F0D /* PayFortSDK.bundle */,
+				74466EF720B5E29200272F0D /* PayFortSDK.framework */,
 				01C855AB20B5301C004AAE2D /* UIKit.framework */,
 				01C855A920B53015004AAE2D /* SystemConfiguration.framework */,
 				01C855A720B5300C004AAE2D /* QuartzCore.framework */,
@@ -277,6 +286,7 @@
 				8835B2FD20B5A89300961324 /* arrow.png in Resources */,
 				01C8556320B5168F004AAE2D /* Main.storyboard in Resources */,
 				01855B2520B554B500C49AB1 /* DrawerView.xib in Resources */,
+				74466EF820B5E29200272F0D /* PayFortSDK.bundle in Resources */,
 				01C8558220B51F04004AAE2D /* ListingView.xib in Resources */,
 				8835B30020B5A98A00961324 /* selected.png in Resources */,
 				01C855AE20B5349A004AAE2D /* GoogleMaps.bundle in Resources */,
@@ -441,6 +451,7 @@
 					"$(PROJECT_DIR)/Buyer/GoogleMAPSDK",
 					"$(PROJECT_DIR)/DemoTest/GoogleMAPSDK",
 					"$(PROJECT_DIR)/DemoTest/GoogleMAPSDK",
+					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = Buyer/Info.plist;
@@ -448,6 +459,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = test.coreDataCodableJson.Buyer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Buyer/Buyer-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,6 +476,7 @@
 					"$(PROJECT_DIR)/Buyer/GoogleMAPSDK",
 					"$(PROJECT_DIR)/DemoTest/GoogleMAPSDK",
 					"$(PROJECT_DIR)/DemoTest/GoogleMAPSDK",
+					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = Buyer/Info.plist;
@@ -471,6 +484,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = test.coreDataCodableJson.Buyer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Buyer/Buyer-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -13,7 +13,41 @@ import GoogleMaps
 class ViewController: BViewController {
 
 
+    let payFort = PayFortController.init(enviroment: KPayFortEnviromentSandBox)
+    
     override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        let request = NSMutableDictionary.init()
+        request.setValue("1000", forKey: "amount")
+        request.setValue("AUTHORIZATION", forKey: "command")
+        request.setValue("USD", forKey: "currency")
+        request.setValue("email@domain.com", forKey: "customer_email")
+        request.setValue("en", forKey: "language")
+        request.setValue("112233682686", forKey: "merchant_reference")
+        request.setValue("token" , forKey: "sdk_token")
+        
+        
+        
+        payFort?.callPayFort(withRequest: request, currentViewController: self,
+                             success: { (requestDic, responeDic) in
+                                print("success")
+                                print("responeDic=(responeDic)")
+                                print("responeDic=(responeDic)")
+        },
+                             canceled: { (requestDic, responeDic) in
+                                print("canceled")
+                                print("requestDic=(requestDic)")
+                                print("responeDic=(responeDic)")
+        },
+                             faild: { (requestDic, responeDic, message) in
+                                print("faild")
+                                print("requestDic=(requestDic)")
+                                print("responeDic=(responeDic)")
+                                print("message=(message)")
+        })
         
         
         self.hasMenuButton = true
@@ -33,7 +67,7 @@ class ViewController: BViewController {
         marker.title = "Sydney"
         marker.snippet = "Australia"
         marker.map = mapView
-        self.view.addSubview(mapView)
+        //self.view.addSubview(mapView)
     }
 
     override func didReceiveMemoryWarning() {
