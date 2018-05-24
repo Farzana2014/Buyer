@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListingView" customModule="DemoTest" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomMapWIndow">
             <connections>
                 <outlet property="detailsLabel" destination="2xM-St-0XH" id="0HK-J2-HsK"/>
                 <outlet property="priceLabel" destination="It6-tJ-opo" id="mpf-XP-bHz"/>

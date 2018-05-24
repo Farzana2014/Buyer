@@ -24,8 +24,10 @@ class DrawerView: UIView  {
     @IBOutlet weak var versionLabel : UILabel!
     @IBOutlet var tableHolder: UIView!
 
-    var delegate:DrawerViewDelegate!
+    var delegate:DrawerViewDelegate! // stil not used. Later buyer code could use it to show their left side menu
     var viewController:BViewController!
+
+    @IBOutlet var venuFetchButton: UIButton!
 
     
    // var menuArray = [HB_Menu]()
@@ -69,6 +71,10 @@ class DrawerView: UIView  {
 //        let dictionary = Bundle.main.infoDictionary!
 //        let version = dictionary["CFBundleShortVersionString"] as! String
 //        versionLabel.text = "Version \(version)"
+        
+       // self.goToVenuFetchButton.addTarget(self, action: #selector(fetchVenuList), for: .touchUpInside) // right menu
+      //  self.goToVenuFetchButton.addTarget(self, action: #selector(fetchVenuList), for: .touchDragInside)
+
     }
     
     override func draw(_ rect: CGRect) {
@@ -76,6 +82,7 @@ class DrawerView: UIView  {
         
 //        showMenu(true)
         showMenu(Show: true)
+
 
     }
     
@@ -91,7 +98,12 @@ class DrawerView: UIView  {
         showHide()
     }
     
-    
+   @IBAction  func fetchVenuList(_ sender: Any) {
+        
+        // fetchVenuList(){
+        
+        print("fetchVenuList")
+    }
     
     @objc func touched(){
 
@@ -302,49 +314,7 @@ class DrawerView: UIView  {
         
       //  let view = viewController.navigationController?.topViewController as! BViewController
         
-//        if menu == .Dashboard && view.isKind(of: viewClass(menu)){
-//            return true
-//        }
-//
-//        if menu == .Fitness && view.isKind(of: viewClass(menu)){
-//            return true
-//        }
-//
-//        if menu == .Aerobic && view.isKind(of: viewClass(menu)){
-//            return true
-//        }
-//
-//        if menu == .Muscular && view.isKind(of: viewClass(menu)){
-//            return true
-//        }
-//
-//        if menu == .Strength && view.isKind(of: viewClass(menu)){
-//            return true
-//        }
-//
-//        if menu == .Workouts && view.isKind(of: viewClass(menu)){
-//            return true
-//        }
-//
-//        if menu == .History && view.isKind(of: viewClass(menu)){
-//            return true
-//        }
-//
-//        if menu == .Technique && view.isKind(of: viewClass(menu)){
-//            return true
-//        }
-//
-//        if menu == .Library && view.isKind(of: viewClass(menu)){
-//            return true
-//        }
-//
-//        if menu == .Profile && view.isKind(of: viewClass(menu)){
-//            return true
-//        }
-//
-//        if menu == .Account && view.isKind(of: viewClass(menu)){
-//            return true
-//        }
+
 //
 //        if menu == .Logout && view.isKind(of: viewClass(menu)){
 //            return true
@@ -367,29 +337,7 @@ class DrawerView: UIView  {
 //        for view in views!{
 //
 //
-//            if menu == .Dashboard && view.isKind(of: viewClass(menu)){
-//                theView = view as! BViewController
-//                break;
-//            }
-//            else if menu == .Fitness && view.isKind(of: viewClass(menu)){
-//                theView = view as! BViewController
-//                break;
-//            }
-//            else if menu == .Workouts && view.isKind(of: viewClass(menu)){
-//                theView = view as! BViewController
-//                break;
-//            }
-//            else if menu == .Profile && view.isKind(of: viewClass(menu)){
-//                theView = view as! BViewController
-//                break;
-//            }
-//            else if menu == .Account && view.isKind(of: viewClass(menu)){
-//                theView = view as! BViewController
-//                break;
-//            }
-//            else if menu == .Fitness && view.isKind(of: viewClass(menu)){
-//                theView = view as! BViewController
-//                break;
+
 //            }
 //        }
         
@@ -403,45 +351,7 @@ class DrawerView: UIView  {
 //        if menu == .Dashboard{
 //            return DashboardViewController.self
 //        }
-//
-//        if menu == .Fitness{
-//            return FitnessDetailsViewController.self
-//        }
-////
-//        if menu == .Profile{
-//            return ProfileSetUpViewController.self
-//        }
-////
-//        if menu == .Library{
-//            return ExerciseHomeViewController.self
-//        }
-////
-//        if menu == .History{
-//            return WorkoutsHistoryViewController.self
-//        }
-////
-////
-//        if menu == .Workouts{
-//            return WorkoutsHomeViewController.self
-//        }
-//
-//        if menu == .Technique  {
-//            return MyTechniqueHomeViewController.self
-//        }
-//        if menu == .Aerobic  {
-//            return FitnessDetailsViewController.self
-//        }
-//        if menu == .Strength  {
-//            return FitnessDetailsViewController.self
-//        }
-//        if menu == .Muscular  {
-//            return FitnessDetailsViewController.self
-//        }
-//
-////
-//        if menu == .Account{
-//            return UpdatePasswordViewController.self
-//        }
+
 //
 //
         
@@ -514,6 +424,8 @@ class DrawerView: UIView  {
         }
         
     }
+
+
 
    
 

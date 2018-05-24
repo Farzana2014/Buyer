@@ -45,25 +45,7 @@ class BViewController: UIViewController , DrawerViewDelegate {
         }
         
         
-//        //Show Filter View
-//        guard let xibs =  Bundle.main.loadNibNamed("listingView", owner: self, options: nil) else{
-//            return
-//        }
-//        listingView = xibs.first as! ListingView
-//        listingView.translatesAutoresizingMaskIntoConstraints = false
-//        self.view.addSubview(listingView)
-//
-//
-//        let heightConstant: CGFloat = 20 // Utility.deviceModelVersion() == "iPhone X" ? 44 : 20
-//        let topCons = NSLayoutConstraint.init(item: listingView, attribute: .top, relatedBy: .equal, toItem: self.view, attribute: .top, multiplier: 1.0, constant: heightConstant)
-//        let leadCons = NSLayoutConstraint.init(item: listingView, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1.0, constant: 0)
-//        let trailCons = NSLayoutConstraint.init(item: listingView, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1.0, constant: 0)
-//        let heightCons = NSLayoutConstraint.init(item: listingView, attribute: .height, relatedBy: .equal, toItem: self.view, attribute: .width, multiplier: 44.0/375.0, constant: 0)
-//
-//        self.view.addConstraint(topCons)
-//        self.view.addConstraint(leadCons)
-//        self.view.addConstraint(trailCons)
-//        self.view.addConstraint(heightCons)
+
         
         
     }
@@ -130,17 +112,7 @@ class BViewController: UIViewController , DrawerViewDelegate {
         let trailCons = NSLayoutConstraint.init(item: topBar, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1.0, constant: 0)
         let heightCons = NSLayoutConstraint.init(item: topBar, attribute: .height, relatedBy: .equal, toItem: self.view, attribute: .width, multiplier: 44.0/375.0, constant: 0)
 
-        //In future we need follow the below approach
-//        if #available(iOS 11, *) {
-//            let guide = self.view.safeAreaLayoutGuide
-//            NSLayoutConstraint.activate([
-//                topBar.topAnchor.constraintEqualToSystemSpacingBelow(guide.topAnchor, multiplier: 1.0)
-//                ])
-//
-//        } else {
-//
-//            self.view.addConstraint(topCons)
-//        }
+
         self.view.addConstraint(topCons)
         self.view.addConstraint(leadCons)
         self.view.addConstraint(trailCons)
@@ -162,7 +134,8 @@ class BViewController: UIViewController , DrawerViewDelegate {
             
           //  topBar.backMenuButton.addTarget(self, action: #selector(searchFromText), for: .touchUpInside)
             topBar.searchTF.addTarget(self, action: #selector(searchFromText), for: .editingDidEndOnExit)
-             topBar.rightButton.addTarget(self, action: #selector(navigationMenuAction), for: .touchUpInside) // right menu
+            topBar.rightButton.addTarget(self, action: #selector(navigationMenuAction), for: .touchUpInside) // right menu
+
 
         }
         else{
@@ -227,8 +200,16 @@ class BViewController: UIViewController , DrawerViewDelegate {
             drawerView.viewController = self
         }
     
+
     }
     
+    @objc func fetchVenuList(){
+        
+        print("fetchVenuList2")
+
+        
+    }
+
     
     
     func drawerWillShow(){
@@ -248,6 +229,8 @@ class BViewController: UIViewController , DrawerViewDelegate {
     func menuTouched(){
         
     }
+
+  
     
     
     override func didReceiveMemoryWarning() {

@@ -9,7 +9,7 @@ import UIKit
 
 class FNavbarView: UIView {
 
-    @IBOutlet var backMenuButton: UIButton!
+    @IBOutlet var backMenuButton: UIButton! // back button or menu
 
    // @IBOutlet var titleLabel: UILabel!
     @IBOutlet var rightButton: UIButton!
