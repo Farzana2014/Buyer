@@ -9,6 +9,7 @@
 import UIKit
 import GoogleMaps
 
+import Alamofire
 
 class ViewController: BViewController , GMSMapViewDelegate   {
 
@@ -80,7 +81,25 @@ class ViewController: BViewController , GMSMapViewDelegate   {
 //                                print("responeDic=(responeDic)")
 //                                print("message=(message)")
 //        })
+     
         
+        //Alamofire
+        var authenticatedJsonHeaders: [String: String] {
+            get {
+                return [
+                    "Content-Type": "application/json",
+                    "Authorization": "Bearer aPJ84GDepzzGi5uRlWWh639pyEBYfQ"
+                ]
+            }
+        }
+        
+        
+        let url = "https://sa711.herokuapp.com/api/seller/?city__name=Dhaka"
+
+        Alamofire.request(url, headers: authenticatedJsonHeaders).responseJSON { (response) in
+            print("response %@",response)
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
