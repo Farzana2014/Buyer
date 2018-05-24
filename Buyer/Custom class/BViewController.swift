@@ -132,7 +132,6 @@ class BViewController: UIViewController , DrawerViewDelegate {
                // topBar.backMenuButton.addTarget(self, action: #selector(navigationMenuAction), for: .touchUpInside)
             }
             
-          //  topBar.backMenuButton.addTarget(self, action: #selector(searchFromText), for: .touchUpInside)
             topBar.searchTF.addTarget(self, action: #selector(searchFromText), for: .editingDidEndOnExit)
             topBar.rightButton.addTarget(self, action: #selector(navigationMenuAction), for: .touchUpInside) // right menu
 

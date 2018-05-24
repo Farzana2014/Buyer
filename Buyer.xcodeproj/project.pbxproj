@@ -7,15 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0146853C20B65D4800DEC3BB /* FNavbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0146853620B65D4800DEC3BB /* FNavbarView.xib */; };
-		0146853D20B65D4800DEC3BB /* DrawerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0146853720B65D4800DEC3BB /* DrawerView.xib */; };
-		0146853E20B65D4800DEC3BB /* BNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146853820B65D4800DEC3BB /* BNavigationController.swift */; };
-		0146853F20B65D4800DEC3BB /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146853920B65D4800DEC3BB /* BViewController.swift */; };
-		0146854020B65D4800DEC3BB /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146853A20B65D4800DEC3BB /* DrawerView.swift */; };
-		0146854120B65D4800DEC3BB /* FNavbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146853B20B65D4800DEC3BB /* FNavbarView.swift */; };
 		01C8555E20B5168F004AAE2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C8555D20B5168F004AAE2D /* AppDelegate.swift */; };
-		01C8556020B5168F004AAE2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C8555F20B5168F004AAE2D /* ViewController.swift */; };
-		01C8556320B5168F004AAE2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01C8556120B5168F004AAE2D /* Main.storyboard */; };
 		01C8556520B5168F004AAE2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C8556420B5168F004AAE2D /* Assets.xcassets */; };
 		01C8556820B5168F004AAE2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01C8556620B5168F004AAE2D /* LaunchScreen.storyboard */; };
 		01C8558120B51F04004AAE2D /* CustomMapWIndow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C8557F20B51F04004AAE2D /* CustomMapWIndow.swift */; };
@@ -48,6 +40,20 @@
 		8835B30120B5A98A00961324 /* deselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 8835B2FF20B5A98A00961324 /* deselect.png */; };
 		B759404820B692C800929505 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B759403B20B6910C00929505 /* Alamofire.framework */; };
 		B759404920B692C800929505 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B759403B20B6910C00929505 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B759404F20B6B82B00929505 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B759404E20B6B82B00929505 /* Main.storyboard */; };
+		B759405820B6B84800929505 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759405020B6B84700929505 /* NotificationViewController.swift */; };
+		B759405920B6B84800929505 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759405120B6B84700929505 /* BookingViewController.swift */; };
+		B759405A20B6B84800929505 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759405220B6B84700929505 /* DashBoardViewController.swift */; };
+		B759405B20B6B84800929505 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759405320B6B84700929505 /* PaymentViewController.swift */; };
+		B759405C20B6B84800929505 /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759405420B6B84700929505 /* ReservationViewController.swift */; };
+		B759405D20B6B84800929505 /* SearchresultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759405520B6B84700929505 /* SearchresultViewController.swift */; };
+		B7D7659920B6B9B200DA8FEB /* DrawerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7D7659320B6B9B200DA8FEB /* DrawerView.xib */; };
+		B7D7659A20B6B9B200DA8FEB /* FNavbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D7659420B6B9B200DA8FEB /* FNavbarView.swift */; };
+		B7D7659B20B6B9B200DA8FEB /* BNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D7659520B6B9B200DA8FEB /* BNavigationController.swift */; };
+		B7D7659C20B6B9B200DA8FEB /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D7659620B6B9B200DA8FEB /* DrawerView.swift */; };
+		B7D7659D20B6B9B200DA8FEB /* FNavbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7D7659720B6B9B200DA8FEB /* FNavbarView.xib */; };
+		B7D7659E20B6B9B200DA8FEB /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D7659820B6B9B200DA8FEB /* BViewController.swift */; };
+		B7D765A120B6BA0C00DA8FEB /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D765A020B6BA0C00DA8FEB /* ViewManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,16 +130,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0146853620B65D4800DEC3BB /* FNavbarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FNavbarView.xib; sourceTree = "<group>"; };
-		0146853720B65D4800DEC3BB /* DrawerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawerView.xib; sourceTree = "<group>"; };
-		0146853820B65D4800DEC3BB /* BNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNavigationController.swift; sourceTree = "<group>"; };
-		0146853920B65D4800DEC3BB /* BViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
-		0146853A20B65D4800DEC3BB /* DrawerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
-		0146853B20B65D4800DEC3BB /* FNavbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNavbarView.swift; sourceTree = "<group>"; };
 		01C8555A20B5168F004AAE2D /* Buyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Buyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C8555D20B5168F004AAE2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		01C8555F20B5168F004AAE2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		01C8556220B5168F004AAE2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01C8556420B5168F004AAE2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01C8556720B5168F004AAE2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01C8556920B5168F004AAE2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -167,6 +165,20 @@
 		8835B2FE20B5A98A00961324 /* selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selected.png; sourceTree = "<group>"; };
 		8835B2FF20B5A98A00961324 /* deselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deselect.png; sourceTree = "<group>"; };
 		B759402F20B6910C00929505 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		B759404E20B6B82B00929505 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B759405020B6B84700929505 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		B759405120B6B84700929505 /* BookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		B759405220B6B84700929505 /* DashBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
+		B759405320B6B84700929505 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		B759405420B6B84700929505 /* ReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
+		B759405520B6B84700929505 /* SearchresultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchresultViewController.swift; sourceTree = "<group>"; };
+		B7D7659320B6B9B200DA8FEB /* DrawerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawerView.xib; sourceTree = "<group>"; };
+		B7D7659420B6B9B200DA8FEB /* FNavbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNavbarView.swift; sourceTree = "<group>"; };
+		B7D7659520B6B9B200DA8FEB /* BNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNavigationController.swift; sourceTree = "<group>"; };
+		B7D7659620B6B9B200DA8FEB /* DrawerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
+		B7D7659720B6B9B200DA8FEB /* FNavbarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FNavbarView.xib; sourceTree = "<group>"; };
+		B7D7659820B6B9B200DA8FEB /* BViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
+		B7D765A020B6BA0C00DA8FEB /* ViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,9 +233,14 @@
 		01C8555C20B5168F004AAE2D /* Buyer */ = {
 			isa = PBXGroup;
 			children = (
+				B759405120B6B84700929505 /* BookingViewController.swift */,
+				B759405220B6B84700929505 /* DashBoardViewController.swift */,
+				B759405020B6B84700929505 /* NotificationViewController.swift */,
+				B759405320B6B84700929505 /* PaymentViewController.swift */,
+				B759405420B6B84700929505 /* ReservationViewController.swift */,
+				B759405520B6B84700929505 /* SearchresultViewController.swift */,
+				B759404E20B6B82B00929505 /* Main.storyboard */,
 				01C8555D20B5168F004AAE2D /* AppDelegate.swift */,
-				01C8555F20B5168F004AAE2D /* ViewController.swift */,
-				01C8556120B5168F004AAE2D /* Main.storyboard */,
 				8835B30220B5BA9C00961324 /* Custom class */,
 				01C8556420B5168F004AAE2D /* Assets.xcassets */,
 				01C8557F20B51F04004AAE2D /* CustomMapWIndow.swift */,
@@ -287,12 +304,13 @@
 		8835B30220B5BA9C00961324 /* Custom class */ = {
 			isa = PBXGroup;
 			children = (
-				0146853820B65D4800DEC3BB /* BNavigationController.swift */,
-				0146853920B65D4800DEC3BB /* BViewController.swift */,
-				0146853A20B65D4800DEC3BB /* DrawerView.swift */,
-				0146853720B65D4800DEC3BB /* DrawerView.xib */,
-				0146853B20B65D4800DEC3BB /* FNavbarView.swift */,
-				0146853620B65D4800DEC3BB /* FNavbarView.xib */,
+				B7D7659F20B6B9DB00DA8FEB /* ViewManager */,
+				B7D7659520B6B9B200DA8FEB /* BNavigationController.swift */,
+				B7D7659820B6B9B200DA8FEB /* BViewController.swift */,
+				B7D7659620B6B9B200DA8FEB /* DrawerView.swift */,
+				B7D7659320B6B9B200DA8FEB /* DrawerView.xib */,
+				B7D7659420B6B9B200DA8FEB /* FNavbarView.swift */,
+				B7D7659720B6B9B200DA8FEB /* FNavbarView.xib */,
 			);
 			path = "Custom class";
 			sourceTree = "<group>";
@@ -309,6 +327,14 @@
 				B759404720B6910C00929505 /* Alamofire.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B7D7659F20B6B9DB00DA8FEB /* ViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				B7D765A020B6BA0C00DA8FEB /* ViewManager.swift */,
+			);
+			path = ViewManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,16 +457,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8835B2FB20B590E700961324 /* Menu.png in Resources */,
+				B7D7659D20B6B9B200DA8FEB /* FNavbarView.xib in Resources */,
 				01C8556820B5168F004AAE2D /* LaunchScreen.storyboard in Resources */,
 				01C8556520B5168F004AAE2D /* Assets.xcassets in Resources */,
-				0146853D20B65D4800DEC3BB /* DrawerView.xib in Resources */,
+				B7D7659920B6B9B200DA8FEB /* DrawerView.xib in Resources */,
 				8835B30120B5A98A00961324 /* deselect.png in Resources */,
 				8835B2FD20B5A89300961324 /* arrow.png in Resources */,
-				01C8556320B5168F004AAE2D /* Main.storyboard in Resources */,
+				B759404F20B6B82B00929505 /* Main.storyboard in Resources */,
 				74466EF820B5E29200272F0D /* PayFortSDK.bundle in Resources */,
 				01C8558220B51F04004AAE2D /* CustomMapWIndow.xib in Resources */,
 				8835B30020B5A98A00961324 /* selected.png in Resources */,
-				0146853C20B65D4800DEC3BB /* FNavbarView.xib in Resources */,
 				01C855AE20B5349A004AAE2D /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,14 +478,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0146854020B65D4800DEC3BB /* DrawerView.swift in Sources */,
 				01C8558120B51F04004AAE2D /* CustomMapWIndow.swift in Sources */,
-				0146853F20B65D4800DEC3BB /* BViewController.swift in Sources */,
-				0146853E20B65D4800DEC3BB /* BNavigationController.swift in Sources */,
 				01C8558420B520FE004AAE2D /* SecondViewController.swift in Sources */,
-				01C8556020B5168F004AAE2D /* ViewController.swift in Sources */,
+				B7D765A120B6BA0C00DA8FEB /* ViewManager.swift in Sources */,
+				B759405820B6B84800929505 /* NotificationViewController.swift in Sources */,
+				B759405B20B6B84800929505 /* PaymentViewController.swift in Sources */,
+				B759405D20B6B84800929505 /* SearchresultViewController.swift in Sources */,
+				B7D7659B20B6B9B200DA8FEB /* BNavigationController.swift in Sources */,
+				B7D7659C20B6B9B200DA8FEB /* DrawerView.swift in Sources */,
 				01C8555E20B5168F004AAE2D /* AppDelegate.swift in Sources */,
-				0146854120B65D4800DEC3BB /* FNavbarView.swift in Sources */,
+				B759405A20B6B84800929505 /* DashBoardViewController.swift in Sources */,
+				B759405C20B6B84800929505 /* ReservationViewController.swift in Sources */,
+				B759405920B6B84800929505 /* BookingViewController.swift in Sources */,
+				B7D7659E20B6B9B200DA8FEB /* BViewController.swift in Sources */,
+				B7D7659A20B6B9B200DA8FEB /* FNavbarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,14 +506,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		01C8556120B5168F004AAE2D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				01C8556220B5168F004AAE2D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		01C8556620B5168F004AAE2D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
